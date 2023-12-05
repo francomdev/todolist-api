@@ -1,0 +1,22 @@
+### Get all items
+GET http://localhost:3000/items
+
+### Create new item
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "item": "test database",
+    "category": "study"
+}
+
+### Edit item by id
+PATCH http://localhost:3000/items/656f754135efef06a23581f7
+Content-Type: application/json
+
+{
+    "item": "Test patch final",
+    "category": "Web dev"
+}
+### Delete item by id
+DELETE  http://localhost:3000/items/656f754135efef06a23581f7
